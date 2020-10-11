@@ -7,7 +7,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set env var
         run: |
-          export FOO=bar
-          echo "::set-env name=FOO::$FOO"
+          echo FOO=bar >> $GITHUB_ENV
       - name: Run a one-line script
         run: echo $FOO
