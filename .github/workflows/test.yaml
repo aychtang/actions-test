@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set env var
-      - run: |
+        run: |
           export FOO=bar
           echo "::set-env name=FOO::$FOO"
       - name: Run a one-line script
